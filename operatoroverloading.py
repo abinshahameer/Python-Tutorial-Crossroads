@@ -3,7 +3,7 @@ class sample:
         self.name = name
 
     def __add__(self, other):
-        name = self.name + other.name
+        name = self.name + " " + other.name
         return name
 
 
