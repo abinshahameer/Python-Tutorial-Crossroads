@@ -3,12 +3,12 @@ class First:
         print("hai")
 
 
-class Second:
+class Second(First):
     def displaysecond(self):
         print("hello")
 
 
-class Third(First, Second):
+class Third(Second):
     def display_third(self):
         print("third")
 
@@ -16,7 +16,3 @@ class Third(First, Second):
 x = Third()
 x.display_third()
 x.displayfirst()
-print(Third.mro())
-
-# if same method name first will work first ie when the time it finds no other will be excecuted
-# method resolution order
