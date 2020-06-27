@@ -26,6 +26,14 @@ class MySampleClass:
         print("age" + str(self.age))
         print("place" + self.place)
 
+    @classmethod
+    def addyear(cls):
+        cls.year += 1
+
+    @staticmethod
+    def displaywelcome():
+        print("welcome")
+
 
 x = MySampleClass("suku", 21, "delhi")
 y = MySampleClass("chanddran", 21, "kollam")
@@ -36,3 +44,17 @@ y.hello("heloo")
 MySampleClass.year = MySampleClass.year + 1
 x.display()
 y.display()
+print("---------------------------")
+MySampleClass.addyear()
+x.addage()
+y.addage()
+x.display()
+y.display()
+print("---------------------------")
+MySampleClass.addyear()
+x.addage()
+y.addage()
+x.display()
+y.display()
+x.displaywelcome()
+MySampleClass.displaywelcome()
