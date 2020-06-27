@@ -9,11 +9,14 @@ class BaseClass:
 
 class subClass(BaseClass):
     def __init__(self):
+        # BaseClass.__init__(self)    #to work base class init
+        super().__init__()  # standard way to call init
         print("subclassinit")  # constructor override
 
     def setname(self, name):
         print("sub class set name")  # method overide
-        self.name = name
+        # self.name = name
+        super(subClass, self).setname()
 
     def welcome(self):
         print("welcome")
